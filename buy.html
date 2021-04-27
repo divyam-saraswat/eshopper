@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="UTF-8">
+    <meta name="viewport" content=" user-scalable=0">
+	<title>City Baker</title>
+	<link rel="shortcut icon" href="assets/images/favicon.png" />
+	<link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+	<link href="assets/css/main.css" rel="stylesheet">
+	<link href="assets/css/main1.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>document.getElementsByTagName("html")[0].className += " js";</script>
+    <script src="assets/js/main.js">
+    </script>
+    <script src="assets/js/store.js" async></script>
+    <style type="text/css">body{zoom:100%;}</style>
+</head>
+<body style="background: #ffb457; touch-action: manipulation;">
+    <!--scroller-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">▲</button>
+    <!--end scroller-->
+	<!---navbar-->
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: rgba(128,128,128,0.7);box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);">
+		
+			<a  class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="City Baker"></a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto" style="text-align: center;">
+                    <li class="nav-item active">
+                        <a class="nav-link"  href="index.html">Home</a>
+                    </li>
+					<li class="nav-item ">
+						<a class="nav-link"  href="contact.html">Contact Us</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Login</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+<!--navbar end-->
+
+
+
+<!--footer-->
+<footer>
+<div class="footer" style="background-color: #1d1d27">
+ <img src="assets/images/citylogo.png" style="margin-left: auto;margin-right: auto; width: 40%;" alt="City Baker">   
+      <p style="color: white;text-align: center;">We provide you the best cakes in better price.. </p>
+      <p style="color: white;text-align: center;">📧<a href="mailto:citybaker01@gmail.com">citybaker01@gmail.com</a></p>
+      <p style="color: white;text-align: center;">☎<a href="7073396716">+91-7073396716</a></p>   
+    </div>
+<div class="col-md-12 text-center" style="background-color: darkgrey;">
+<p style="color: black;"><b>Copyright CityBaker © 2021. All rights reserved.</b></p>
+</div>
+</footer>
+<!--footer end-->    
+    <script src="assets/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
+    <script src="assets/js/main.js"></script> 
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+	</script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+	</script> 
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+	</script>
+	<script type="text/javascript">
+		"use strict"; 
+
+const body = document.body;
+const bgColorsBody = ["#ffb457", "#ff96bd", "#9999fb", "#ffe797", "#cffff1"];
+const menu = body.querySelector(".menu");
+const menuItems = menu.querySelectorAll(".menu__item");
+const menuBorder = menu.querySelector(".menu__border");
+let activeItem = menu.querySelector(".active");
+
+function clickItem(item, index) {
+
+    menu.style.removeProperty("--timeOut");
+    
+    if (activeItem == item) return;
+    
+    if (activeItem) {
+        activeItem.classList.remove("active");
+    }
+
+    
+    item.classList.add("active");
+    body.style.backgroundColor = bgColorsBody[index];
+    activeItem = item;
+    offsetMenuBorder(activeItem, menuBorder);
+    
+    
+}
+
+function offsetMenuBorder(element, menuBorder) {
+
+    const offsetActiveItem = element.getBoundingClientRect();
+    const left = Math.floor(offsetActiveItem.left - menu.offsetLeft - (menuBorder.offsetWidth  - offsetActiveItem.width) / 2) +  "px";
+    menuBorder.style.transform = `translate3d(${left}, 0 , 0)`;
+
+}
+
+offsetMenuBorder(activeItem, menuBorder);
+
+menuItems.forEach((item, index) => {
+
+    item.addEventListener("click", () => clickItem(item, index));
+    
+})
+
+window.addEventListener("resize", () => {
+    offsetMenuBorder(activeItem, menuBorder);
+    menu.style.setProperty("--timeOut", "none");
+});
+	</script>
+
+	<script>
+function openCategory(category) {
+  var i;
+  var x = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(category).style.display = "block";  
+}
+</script>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>

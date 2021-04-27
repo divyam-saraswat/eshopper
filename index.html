@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="UTF-8">
+    <meta name="viewport" content=" user-scalable=0">
+	<title>City Baker</title>
+	<link rel="shortcut icon" href="assets/images/favicon.png" />
+	<link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+	<link href="assets/css/main.css" rel="stylesheet">
+	<link href="assets/css/main1.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>document.getElementsByTagName("html")[0].className += " js";</script>
+    <script src="assets/js/main.js">
+    </script>
+    <style type="text/css">body{zoom:100%;}</style>
+</head>
+<body style="background: #ffb457; touch-action: manipulation;">
+    <!--scroller-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">▲</button>
+    <!--end scroller-->
+	<!---navbar-->
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: rgba(128,128,128,0.7);box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);">
+		
+			<a  class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="City Baker"></a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto" style="text-align: center;">
+                    <li class="nav-item active">
+                        <a class="nav-link"  href="index.html">Home</a>
+                    </li>
+					<li class="nav-item ">
+						<a class="nav-link"  href="contact.html">Contact Us</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Login</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="carousel slide" data-ride="carousel" id="carouselExampleIndicators">
+		<div class="carousel-inner">
+		
+<div id="captioned-gallery">
+	<figure class="slider">
+		<figure>
+			<img src="assets/images/slide/bg_1.jpg" alt>
+			<figcaption></figcaption>
+		</figure>
+		<figure>
+			<img src="assets/images/slide/bg_2.jpg" alt>
+			<figcaption></figcaption>
+		</figure>
+		<figure>
+			<img src="assets/images/slide/bg_3.jpg" alt>
+			<figcaption></figcaption>
+		</figure>
+	</figure>	
+	</div>
+</div>
+</div>
+	<!---navbar & slider-->
+
+
+<!--shop-->
+
+<menu class="menu" style="width: 100%;">
+    
+    <button class="menu__item active tablinks" style="color: grey;" onclick="openCategory('All')" >
+      <h4 style="color: #ffb457; ">All Cakes</h4>
+    </button>
+  
+
+    <button class="menu__item tablinks" style="color: grey;" onclick="openCategory('Birthday')">
+     <h4 style="color: #ff96bd; ">Birthday Cakes</h4>
+    </button>
+
+    <button class="menu__item tablinks" style="color: grey;" onclick="openCategory('Wedding')">
+    <h4 style="color:  #9999fb; ">Wedding Cakes</h4> 
+    </button>
+
+    <button class="menu__item tablinks" style="color: grey;" onclick="openCategory('Special')">
+     <h4 style="color: #ffe797; ">Special Cakes</h4> 
+    </button>
+
+    <div class="menu__border"></div>
+
+  </menu>
+
+  <div class="svg-container">
+    <svg viewBox="0 0 202.9 45.5" >
+      <clipPath id="menu" clipPathUnits="objectBoundingBox" transform="scale(0.0049285362247413 0.021978021978022)">
+        <path  d="M6.7,45.5c5.7,0.1,14.1-0.4,23.3-4c5.7-2.3,9.9-5,18.1-10.5c10.7-7.1,11.8-9.2,20.6-14.3c5-2.9,9.2-5.2,15.2-7
+          c7.1-2.1,13.3-2.3,17.6-2.1c4.2-0.2,10.5,0.1,17.6,2.1c6.1,1.8,10.2,4.1,15.2,7c8.8,5,9.9,7.1,20.6,14.3c8.3,5.5,12.4,8.2,18.1,10.5
+          c9.2,3.6,17.6,4.2,23.3,4H6.7z"/>
+      </clipPath>
+    </svg>
+  </div>
+
+  <div id="All" class="tabcontent" >
+<h1 class = "lg-title">All Cakes</h1>
+<b></b>
+<!--allcakes-->
+
+<div class = "products">
+            <div class = "container1">
+                <div class = "product-items">
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img ">
+                                <img  class="shop-item-image" src ="assets/images/products/product8.jpg" alt = ""/>
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title shop-item-name" style="font-weight: bold;" >Choclate Cake</h2>
+                            </div>
+                            <p class = "product-price" style="font-weight: bold;" >₹<span class="shop-item-price">133.00</span></p>
+                            <p class = "product-price" style="font-weight: bold;" >₹<span class="shop-item-price">133.00</span></p>
+                             <div class = "product-btns">
+                                <button type = "button" class = "btn-cart js-cd-add-to-cart"> add to cart
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                </button>
+                            </div>
+                        </div>
+
+
+                        <div class = "off-info">
+                            <h2 class = "sm-title">25% off</h2>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img class="shop-item-image" src = "assets/images/products/product7.jpg" alt = ""/>
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title shop-item-name" style="font-weight: bold;" >ButterScotch Cake</h2>
+                            </div>
+                            <p class = "product-price" style="font-weight: bold;" >₹<span class="shop-item-price">133.00</span></p>
+                             <div class = "product-btns">
+                                <button type = "button" class = "btn-cart  js-cd-add-to-cart"> add to cart
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img class = "shop-item-image" src = "assets/images/products/product12.jpg" alt = "product image">
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title shop-item-name" style="font-weight: bold;" >Carribian Cake</h2>
+                            </div>
+                            <p class = "product-price" style="font-weight: bold;" >₹<span class="shop-item-price">133.00</span></p>
+                             <div class = "product-btns">
+                                <button type = "button" class = "btn-cart js-cd-add-to-cart"> add to cart
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "assets/images/products/product11.jpg" alt = "product image">
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title" style="font-weight: bold;" >Vanilla Cake</h2>
+                            </div>
+                            <p class = "product-price" style="font-weight: bold;" >133.00</p>
+                             <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                </button>
+                            </div>
+                        </div>
+
+
+                        <div class = "off-info">
+                            <h2 class = "sm-title">25% off</h2>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "assets/images/products/product7.jpg" alt = "product image">
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title" style="font-weight: bold;" >Choclate Cake</h2>
+                            </div>
+                            <p class = "product-price" style="font-weight: bold;" >133.00</p>
+                             <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "assets/images/products/product8.jpg" alt = "product image">
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title" style="font-weight: bold;" >RedVelvet Cake</h2>
+                            </div>
+                            <p class = "product-price" style="font-weight: bold;" >133.00</p>
+                             <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "assets/images/products/product9.jpg" alt = "product image">
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title" style="font-weight: bold;" >Pinneple Cake</h2>
+                            </div>
+                            <p class = "product-price" style="font-weight: bold;" >133.00</p>
+                             <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "assets/images/products/product10.jpg" alt = "product image">
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title" style="font-weight: bold;" >Choclate Cake</h2>
+                            </div>
+                            <p class = "product-price" style="font-weight: bold;" >133.00</p>
+                             <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                </button>
+                            </div>
+                        </div>
+
+
+                        <div class = "off-info">
+                            <h2 class = "sm-title">35% off</h2>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                </div>
+            </div>
+        </div> 
+<div class = "products">
+            <div class = "container1">
+                <div class = "product-items">
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img class="shop-item-img" src = "assets/images/products/product8.jpg" alt = "product image">
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title" style="font-weight: bold;" class="shop-item-name">Choclate Cake</h2>
+                            </div>
+                            <p class = "shop-item-price product-price" style="font-weight: bold;" >133.00</p>
+                             <div class = "product-btns">
+                                <button type = "button" class = "btn-cart "> add to cart
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                </button>
+                            </div>
+                        </div>
+
+
+                        <div class = "off-info">
+                            <h2 class = "sm-title">25% off</h2>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "assets/images/products/product7.jpg" alt = "product image">
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title" style="font-weight: bold;" >ButterScotch Cake</h2>
+                            </div>
+                            <p class = "product-price" style="font-weight: bold;" >133.00</p>
+                             <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "assets/images/products/product12.jpg" alt = "product image">
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title" style="font-weight: bold;" >Carribian Cake</h2>
+                            </div>
+                            <p class = "product-price" style="font-weight: bold;" >133.00</p>
+                             <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "assets/images/products/product11.jpg" alt = "product image">
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title" style="font-weight: bold;" >Vanilla Cake</h2>
+                            </div>
+                            <p class = "product-price" style="font-weight: bold;" >133.00</p>
+                             <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                </button>
+                            </div>
+                        </div>
+
+
+                        <div class = "off-info">
+                            <h2 class = "sm-title">25% off</h2>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "assets/images/products/product7.jpg" alt = "product image">
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title" style="font-weight: bold;" >Choclate Cake</h2>
+                            </div>
+                            <p class = "product-price" style="font-weight: bold;" >133.00</p>
+                             <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "assets/images/products/product8.jpg" alt = "product image">
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title" style="font-weight: bold;" >RedVelvet Cake</h2>
+                            </div>
+                            <p class = "product-price" style="font-weight: bold;" >133.00</p>
+                             <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "assets/images/products/product9.jpg" alt = "product image">
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title" style="font-weight: bold;" >Pinneple Cake</h2>
+                            </div>
+                            <p class = "product-price" style="font-weight: bold;" >133.00</p>
+                             <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "assets/images/products/product10.jpg" alt = "product image">
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title" style="font-weight: bold;" >Choclate Cake</h2>
+                            </div>
+                            <p class = "product-price" style="font-weight: bold;" >133.00</p>
+                             <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                </button>
+                            </div>
+                        </div>
+
+
+                        <div class = "off-info">
+                            <h2 class = "sm-title">35% off</h2>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+</div>
+<!--all cake end-->
+
+
+<div id="Birthday" class="tabcontent" style="display:none">
+  <div class = "products">
+            <div class = "container1">
+                <h1 class = "lg-title">Birthday Cakes</h1>
+                <div class = "product-items">
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "assets/images/products/product8.jpg" alt = "product image">
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title" style="font-weight: bold;" >Choclate Cake</h2>
+                            </div>
+                            <p class = "product-price" style="font-weight: bold;" >133.00</p>
+                             <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                </button>
+                            </div>
+                        </div>
+
+
+                        <div class = "off-info">
+                            <h2 class = "sm-title">25% off</h2>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "assets/images/products/product7.jpg" alt = "product image">
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title" style="font-weight: bold;" >ButterScotch Cake</h2>
+                            </div>
+                            <p class = "product-price" style="font-weight: bold;" >133.00</p>
+                             <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "assets/images/products/product12.jpg" alt = "product image">
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title" style="font-weight: bold;" >Carribian Cake</h2>
+                            </div>
+                            <p class = "product-price" style="font-weight: bold;" >133.00</p>
+                             <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "assets/images/products/product11.jpg" alt = "product image">
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title" style="font-weight: bold;" >Vanilla Cake</h2>
+                            </div>
+                            <p class = "product-price" style="font-weight: bold;" >133.00</p>
+                             <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                </button>
+                            </div>
+                        </div>
+
+
+                        <div class = "off-info">
+                            <h2 class = "sm-title">25% off</h2>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "assets/images/products/product7.jpg" alt = "product image">
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title" style="font-weight: bold;" >Choclate Cake</h2>
+                            </div>
+                            <p class = "product-price" style="font-weight: bold;" >133.00</p>
+                             <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "assets/images/products/product8.jpg" alt = "product image">
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title" style="font-weight: bold;" >RedVelvet Cake</h2>
+                            </div>
+                            <p class = "product-price" style="font-weight: bold;" >133.00</p>
+                             <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "assets/images/products/product9.jpg" alt = "product image">
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title" style="font-weight: bold;" >Pinneple Cake</h2>
+                            </div>
+                            <p class = "product-price" style="font-weight: bold;" >133.00</p>
+                             <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "assets/images/products/product10.jpg" alt = "product image">
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title" style="font-weight: bold;" >Choclate Cake</h2>
+                            </div>
+                            <p class = "product-price" style="font-weight: bold;" >133.00</p>
+                             <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                </button>
+                            </div>
+                        </div>
+
+
+                        <div class = "off-info">
+                            <h2 class = "sm-title">35% off</h2>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                </div>
+            </div>
+        </div> 
+</div>
+
+<div id="Wedding" class="tabcontent" style="display:none">
+  <div class = "products">
+            <div class = "container1">
+                <h1 class = "lg-title">Wedding Cakes</h1>
+                <div class = "product-items">
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "assets/images/products/product8.jpg" alt = "product image">
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title" style="font-weight: bold;" >Choclate Cake</h2>
+                            </div>
+                            <p class = "product-price" style="font-weight: bold;" >133.00</p>
+                             <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                </button>
+                            </div>
+                        </div>
+
+
+                        <div class = "off-info">
+                            <h2 class = "sm-title">25% off</h2>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "assets/images/products/product7.jpg" alt = "product image">
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title" style="font-weight: bold;" >ButterScotch Cake</h2>
+                            </div>
+                            <p class = "product-price" style="font-weight: bold;" >133.00</p>
+                             <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "assets/images/products/product12.jpg" alt = "product image">
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title" style="font-weight: bold;" >Carribian Cake</h2>
+                            </div>
+                            <p class = "product-price" style="font-weight: bold;" >133.00</p>
+                             <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "assets/images/products/product11.jpg" alt = "product image">
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title" style="font-weight: bold;" >Vanilla Cake</h2>
+                            </div>
+                            <p class = "product-price" style="font-weight: bold;" >133.00</p>
+                             <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                </button>
+                            </div>
+                        </div>
+
+
+                        <div class = "off-info">
+                            <h2 class = "sm-title">25% off</h2>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "assets/images/products/product7.jpg" alt = "product image">
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title" style="font-weight: bold;" >Choclate Cake</h2>
+                            </div>
+                            <p class = "product-price" style="font-weight: bold;" >133.00</p>
+                             <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "assets/images/products/product8.jpg" alt = "product image">
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title" style="font-weight: bold;" >RedVelvet Cake</h2>
+                            </div>
+                            <p class = "product-price" style="font-weight: bold;" >133.00</p>
+                             <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "assets/images/products/product9.jpg" alt = "product image">
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title" style="font-weight: bold;" >Pinneple Cake</h2>
+                            </div>
+                            <p class = "product-price" style="font-weight: bold;" >133.00</p>
+                             <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "assets/images/products/product10.jpg" alt = "product image">
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title" style="font-weight: bold;" >Choclate Cake</h2>
+                            </div>
+                            <p class = "product-price" style="font-weight: bold;" >133.00</p>
+                             <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                </button>
+                            </div>
+                        </div>
+
+
+                        <div class = "off-info">
+                            <h2 class = "sm-title">35% off</h2>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                </div>
+            </div>
+        </div>
+</div>
+<div id="Special" class="tabcontent" style="display:none">
+ <div class = "products">
+            <div class = "container1">
+                <h1 class = "lg-title">Special Cakes</h1>
+                <div class = "product-items">
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "assets/images/products/product8.jpg" alt = "product image">
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title" style="font-weight: bold;" >Choclate Cake</h2>
+                            </div>
+                            <p class = "product-price" style="font-weight: bold;" >133.00</p>
+                             <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                </button>
+                            </div>
+                        </div>
+
+
+                        <div class = "off-info">
+                            <h2 class = "sm-title">25% off</h2>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "assets/images/products/product7.jpg" alt = "product image">
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title" style="font-weight: bold;" >ButterScotch Cake</h2>
+                            </div>
+                            <p class = "product-price" style="font-weight: bold;" >133.00</p>
+                             <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "assets/images/products/product12.jpg" alt = "product image">
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title" style="font-weight: bold;" >Carribian Cake</h2>
+                            </div>
+                            <p class = "product-price" style="font-weight: bold;" >133.00</p>
+                             <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "assets/images/products/product11.jpg" alt = "product image">
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title" style="font-weight: bold;" >Vanilla Cake</h2>
+                            </div>
+                            <p class = "product-price" style="font-weight: bold;" >133.00</p>
+                             <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                </button>
+                            </div>
+                        </div>
+
+
+                        <div class = "off-info">
+                            <h2 class = "sm-title">25% off</h2>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "assets/images/products/product7.jpg" alt = "product image">
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title" style="font-weight: bold;" >Choclate Cake</h2>
+                            </div>
+                            <p class = "product-price" style="font-weight: bold;" >133.00</p>
+                             <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "assets/images/products/product8.jpg" alt = "product image">
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title" style="font-weight: bold;" >RedVelvet Cake</h2>
+                            </div>
+                            <p class = "product-price" style="font-weight: bold;" >133.00</p>
+                             <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "assets/images/products/product9.jpg" alt = "product image">
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title" style="font-weight: bold;" >Pinneple Cake</h2>
+                            </div>
+                            <p class = "product-price" style="font-weight: bold;" >133.00</p>
+                             <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img src = "assets/images/products/product10.jpg" alt = "product image">
+                            </div>
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-info-top">
+                                <h2 class = "sm-title" style="font-weight: bold;" >Choclate Cake</h2>
+                            </div>
+                            <p class = "product-price" style="font-weight: bold;" >₹133.00</p>
+                             <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to cart
+                                </button>
+                                <button type = "button" class = "btn-buy"> buy now
+                                </button>
+                            </div>
+                        </div>
+
+
+                        <div class = "off-info">
+                            <h2 class = "sm-title">35% off</h2>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                </div>
+            </div>
+        </div>
+</div>
+<!--Cart-->
+<div class="cd-cart cd-cart--empty js-cd-cart" >
+    <a href="#0" class="cd-cart__trigger text-replace" >
+
+        <ul class="cd-cart__count"> <!-- cart items count -->
+            <li>0</li>
+            <li>0</li>
+        </ul> <!-- .cd-cart__count -->
+    </a>
+
+    <div class="cd-cart__content">
+        <div class="cd-cart__layout">
+            <header class="cd-cart__header">
+                <h2>Cart 🛒</h2>
+                <span class="cd-cart__undo">Item removed. <a href="#0">Undo</a></span>
+            </header>
+            
+            <div class="cd-cart__body">
+                <ul>
+                    <h2></h2><!-- products added to the cart will be inserted here using JavaScript -->
+                </ul>
+            </div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+            <footer class="cd-cart__footer">
+                <a href="#0" class="cd-cart__checkout">
+          <em>Checkout - ₹<span>0</span>
+            <svg class="icon icon--sm" viewBox="0 0 24 24"><g fill="none" stroke="currentColor"><line stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="3" y1="12" x2="21" y2="12"/><polyline stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="15,6 21,12 15,18 "/></g>
+            </svg>
+          </em>
+        </a>
+            </footer>
+        </div>
+    </div> <!-- .cd-cart__content -->
+</div> <!-- cd-cart -->
+
+<!--footer-->
+<footer>
+<div class="footer" style="background-color: #1d1d27">
+ <img src="assets/images/citylogo.png" style="margin-left: auto;margin-right: auto; width: 40%;" alt="City Baker">   
+      <p style="color: white;text-align: center;">We provide you the best cakes in better price.. </p>
+      <p style="color: white;text-align: center;">📧<a href="mailto:citybaker01@gmail.com">citybaker01@gmail.com</a></p>
+      <p style="color: white;text-align: center;">☎<a href="7073396716">+91-7073396716</a></p>   
+    </div>
+<div class="col-md-12 text-center" style="background-color: darkgrey;">
+<p style="color: black;"><b>Copyright CityBaker © 2021. All rights reserved.</b></p>
+</div>
+</footer>
+<!--footer end-->    
+    <script src="assets/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
+    <script src="assets/js/main.js"></script> 
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+	</script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+	</script> 
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+	</script>
+	<script type="text/javascript">
+		"use strict"; 
+
+const body = document.body;
+const bgColorsBody = ["#ffb457", "#ff96bd", "#9999fb", "#ffe797", "#cffff1"];
+const menu = body.querySelector(".menu");
+const menuItems = menu.querySelectorAll(".menu__item");
+const menuBorder = menu.querySelector(".menu__border");
+let activeItem = menu.querySelector(".active");
+
+function clickItem(item, index) {
+
+    menu.style.removeProperty("--timeOut");
+    
+    if (activeItem == item) return;
+    
+    if (activeItem) {
+        activeItem.classList.remove("active");
+    }
+
+    
+    item.classList.add("active");
+    body.style.backgroundColor = bgColorsBody[index];
+    activeItem = item;
+    offsetMenuBorder(activeItem, menuBorder);
+    
+    
+}
+
+function offsetMenuBorder(element, menuBorder) {
+
+    const offsetActiveItem = element.getBoundingClientRect();
+    const left = Math.floor(offsetActiveItem.left - menu.offsetLeft - (menuBorder.offsetWidth  - offsetActiveItem.width) / 2) +  "px";
+    menuBorder.style.transform = `translate3d(${left}, 0 , 0)`;
+
+}
+
+offsetMenuBorder(activeItem, menuBorder);
+
+menuItems.forEach((item, index) => {
+
+    item.addEventListener("click", () => clickItem(item, index));
+    
+})
+
+window.addEventListener("resize", () => {
+    offsetMenuBorder(activeItem, menuBorder);
+    menu.style.setProperty("--timeOut", "none");
+});
+	</script>
+
+	<script>
+function openCategory(category) {
+  var i;
+  var x = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(category).style.display = "block";  
+}
+</script>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>
